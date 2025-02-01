@@ -25,6 +25,6 @@ jobs:
       - name: Run the bot
         run: python bot.py
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+          TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}  
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }} 
           CHAT_ID: ${{ secrets.CHAT_ID }}  
