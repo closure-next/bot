@@ -14,7 +14,7 @@ def get_changelog():
     
     if response.status_code == 200:
         commits = response.json()
-        changelog = "\n".join([f"{commit['commit']['author']['name']}: {commit['commit']['message']}" for commit in commits[:5]])  
+        changelog = "\n".join([f"{commit['commit']['author']['name']}: {commit['commit']['message']}" for commit in commits[:1]])  
         return changelog
     else:
         return "Error fetching changelogs."
