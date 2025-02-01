@@ -9,7 +9,7 @@ REPO_NAME = "closure-next"
 
 def get_changelog():
     url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/commits"
-    headers = {'Authorization': f'token {GITHUB_TOKEN}'}
+    headers = {'Authorization': f'token {TOKEN_GITHUB}'}
     response = requests.get(url, headers=headers)
     
     if response.status_code == 200:
