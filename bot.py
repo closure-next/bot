@@ -1,7 +1,7 @@
 import requests
 import os
 
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+TOKEN_GITHUB = os.getenv("TOKEN_GITHUB")
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 REPO_OWNER = "MilesONerd"
